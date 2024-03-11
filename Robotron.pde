@@ -9,6 +9,9 @@ int check_shot;
 int score, life_score, lives_added;
 Minim minim;
 
+// 把 
+
+
 AudioPlayer sound1;
 AudioPlayer sound2;
 AudioPlayer sound3;
@@ -166,6 +169,7 @@ void keyPressed(){
       l.p1.move(7);}
   }
 }
+
 
 void mousePressed(){
   if(start==true){
