@@ -8,8 +8,9 @@ int[][] MAP;
 int check_shot;
 int score, life_score, lives_added;
 Minim minim;
+boolean button1Clicked = false;
 
-// 把 
+
 
 
 AudioPlayer sound1;
@@ -63,8 +64,12 @@ void draw(){
     fill(34);
     text("Robotron 4303",width/2,(height/2)-10);
     // 显示一个按钮，点击后开始
-    
-
+    if (button1Clicked) {
+    fill(0, 255, 0); // Green color when button is clicked
+  } else {
+    fill(255, 0, 0); // Red color when button is not clicked
+  }
+    rect(300, 300, 200, 100);
     textSize(14);
     text("Press Spacebar to Continue!",width/2,(height/2)+10);
     
@@ -179,5 +184,12 @@ void mousePressed(){
     sound3.rewind();
     sound3.play(340);
     check_shot=1;
+  }
+  // Check if mouse is inside the button
+  if (mouseX > 300 && mouseX < 500 && mouseY > 300 && mouseY < 400) {
+    button1Clicked = true;
+  }
+  else {
+    button1Clicked = false;
   }
 }
