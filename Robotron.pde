@@ -57,12 +57,15 @@ void start_game(){
 void draw(){
   
   if(welcome==true){
-    background(152);
-    textSize(43);
+    background(100);
+    textSize(45);
     textAlign(CENTER);
-    fill(32);
-    text("ROBOTRON",width/2,(height/2)-10);
-    textSize(12);
+    fill(34);
+    text("Robotron 4303",width/2,(height/2)-10);
+    // 显示一个按钮，点击后开始
+    
+
+    textSize(14);
     text("Press Spacebar to Continue!",width/2,(height/2)+10);
     
     if(keyPressed==true && key== ' ')
