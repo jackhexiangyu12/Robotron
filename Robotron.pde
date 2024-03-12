@@ -72,10 +72,13 @@ void draw(){
     rect(300, 300, 200, 100);
     textSize(14);
     fill(0); // Black color for the text
-    text("Press the Button to Start!",width/2,(height/2));
+    text("Press the Button to Start!",width/2,(height/2)+20);
     
     // if(keyPressed==true && key== ' ')
     //   welcome=false;
+    if (button1Clicked) {
+      welcome=false;
+    }
   }
   else{
     sound1.setGain(-25);

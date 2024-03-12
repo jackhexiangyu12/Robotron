@@ -400,6 +400,7 @@ class Level{
     }
     
   }
+  
   boolean remove_boss(){
     if(B.isAlive==false){
       score+=50;
