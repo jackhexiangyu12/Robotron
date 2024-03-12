@@ -71,6 +71,7 @@ void draw(){
   }
     rect(300, 300, 200, 100);
     textSize(14);
+    fill(0); // Black color for the text
     text("Press Spacebar to Continue!",width/2,(height/2)+10);
     
     if(keyPressed==true && key== ' ')
